@@ -51,6 +51,8 @@ class DateInput extends PureComponent {
 
     if (e.key === 'Enter') {
       this.update(value);
+      e.target.blur();
+      console.log('zadzialalo?');
     }
   };
 
